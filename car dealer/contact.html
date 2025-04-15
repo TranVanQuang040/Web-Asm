@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ</title>
+    <link rel="stylesheet" href="contact.css"> <!-- Kết nối với file CSS -->
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="menu">
+            <li><a href="Showroom.html">HOME</a></li>
+            <li class="dropdown">
+                <a href="#">SHOWROOM</a>
+                <div class="dropdown-content">
+                    <div class="brand-list">
+                        <div class="brand"><span class="count"></span> ASTON MARTIN</div>
+                        <div class="brand"><span class="count"></span> FERRARI</div>
+                        <div class="brand"><span class="count"></span> PORSCHE</div>
+                    </div>
+                    <div class="brand-list">
+                        <div class="brand"><span class="count"></span> AUDI</div>
+                        <div class="brand"><span class="count"></span> LAMBORGHINI</div>
+                        <div class="brand"><span class="count"></span> ROLLS ROYCE</div>
+                    </div>
+                    <div class="brand-list">
+                        <div class="brand"><span class="count"></span> BENTLEY</div>
+                        <div class="brand"><span class="count"></span> LAND ROVER</div>
+                        <div class="brand"><span class="count"></span> MERCEDES</div>
+                    </div>
+                </div>
+            </li>
+            
+            <li class="dropdown">
+                <a href="#">SELL YOUR CAR</a>
+                <div class="dropdownn-content">
+              <div class="selling-car">
+                <div class=" selling"><span class="count"></span> Sell us your car</div>
+              </div>
+             </div>
+            </li>  
+            <li><a href="#">SERVICES</a></li>
+            <ul>
+                <li><a href="contact.html">CONTACT</a></li> 
+            </ul>
+            
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Liên Hệ Chúng Tôi</h2>
+        <p>Vui lòng điền thông tin của bạn vào form dưới đây, chúng tôi sẽ phản hồi sớm nhất!</p>
+
+        <form action="#" method="POST">
+            <label for="name">Họ và Tên:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Tin Nhắn:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Gửi Tin Nhắn</button>
+
+        </form>
+        <div id="response-message" class="hidden">
+             Cảm ơn bạn! Chúng tôi đã nhận được tin nhắn và sẽ phản hồi sớm nhất.
+        </div>
+
+        <div class="contact-info">
+            <h3>Thông Tin Liên Hệ</h3>
+            <p><strong>Địa chỉ:</strong> 123 Đường ABC, Quận 1, TP. HN</p>
+            <p><strong>Email:</strong> Vanquangt44@gmail.com</p>
+            <p><strong>Hotline:</strong> 09 1152 2004</p>
+        </div>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>

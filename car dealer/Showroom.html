@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showroom Dropdown</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="menu">
+            <li><a href="Showroom.html">HOME</a></li>
+            <li class="dropdown">
+                <a href="#">SHOWROOM</a>
+                <div class="dropdown-content">
+                    <div class="brand-list">
+                        <div class="brand"><span class="count"></span> ASTON MARTIN</div>
+                        <div class="brand"><span class="count"></span> FERRARI</div>
+                        <div class="brand"><span class="count"></span> PORSCHE</div>
+                    </div>
+                    <div class="brand-list">
+                        <div class="brand"><span class="count"></span> AUDI</div>
+                        <div class="brand"><span class="count"></span> LAMBORGHINI</div>
+                        <div class="brand"><span class="count"></span> ROLLS ROYCE</div>
+                    </div>
+                    <div class="brand-list">
+                        <div class="brand"><span class="count"></span> BENTLEY</div>
+                        <div class="brand"><span class="count"></span> LAND ROVER</div>
+                        <div class="brand"><span class="count"></span> MERCEDES</div>
+                    </div>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">SELL YOUR CAR</a>
+                <div class="dropdownn-content">
+                    <div class="selling-car">
+                        <div class="selling"><span class="count"></span> Sell us your car</div>
+                    </div>
+                </div>
+            </li>
+            <li><a href="Cart.html">SERVICES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <div class="slider">
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+      </div>
+
+    <div class="container">
+        <div class="header">
+            <div class="filters">
+                <select id="brand-filter">
+                    <option value="all">Show All</option>
+                    <option value="ferrari">Ferrari</option>
+                    <option value="lamborghini">Lamborghini</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="porsche">Porsche</option>
+                    <option value="bentley">Bentley</option>
+                    <option value="aston">Aston Martin</option>
+                </select>
+                <select id="price-sort">
+                    <option value="desc">Price: High to Low</option>
+                    <option value="asc">Price: Low to High</option>
+                </select>
+                <button id="view-all">View All</button>
+                <button id="filter-stock">Filter Stock</button>
+            </div>
+        </div>
+
+        <div class="car-list">
+            <div class="car-card" data-brand="ferrari" data-price="40000000000">
+                <img src="../car dealer/img/ferrari.jpg" alt="Ferrari 812 Competizione">
+                <h3>Ferrari 812 Competizione</h3>
+                <p class="car-info"><span class="year">2024</span> | <span class="mileage">424 km</span> | <span class="color">Red F1 Matt</span></p>
+                <p class="description">A flagship of Ferrari's V12 lineup with aggressive styling and blistering speed.</p>
+                <p class="price">40.000.000.000 VND</p>
+            </div>
+
+            <div class="car-card" data-brand="lamborghini" data-price="16000000000">
+                <img src="../car dealer/img/lamborghini.jpg" alt="Lamborghini Aventador">
+                <h3>Lamborghini Aventador LP780-4 Ultimae Roadster</h3>
+                <p class="car-info"><span class="year">2022</span> | <span class="mileage">5980 km</span> | <span class="color">Yellow Spica</span></p>
+                <p class="description">Final edition of the Aventador series, combining power and exclusivity.</p>
+                <p class="price">16.000.000.000 VND</p>
+            </div>
+
+            <div class="car-card" data-brand="lamborghini" data-price="20000000000">
+                <img src="../car dealer/img/revuelto.jpg" alt="Lamborghini Revuelto">
+                <h3>Lamborghini Revuelto</h3>
+                <p class="car-info"><span class="year">2024</span> | <span class="mileage">1179 km</span> | <span class="color">Blu Astraeus</span></p>
+                <p class="description">The Lamborghini Revuelto combines electrifying performance with bold design.</p>
+                <p class="price">20.000.000.000 VND</p>
+            </div>
+
+            <div class="car-card" data-brand="mercedes" data-price="15000000000">
+                <img src="../car dealer/img/AMG.jpg" alt="Mercedes-Benz AMG GT Black Series">
+                <h3>2022 Mercedes-AMG GT Black Series</h3>
+                <p class="car-info"><span class="year">2022</span> | <span class="mileage">868 km</span> | <span class="color">Magma Beam Orange</span></p>
+                <p class="description">Track-focused engineering from AMG delivering elite performance and style.</p>
+                <p class="price">15.000.000.000 VND</p>
+            </div>
+
+            <div class="car-card" data-brand="porsche" data-price="9000000000">
+                <img src="../car dealer/img/porsche 911 turbo s.jpg" alt="Porsche 911 Turbo S">
+                <h3>Porsche Taycan Turbo S</h3>
+                <p class="car-info"><span class="year">2023</span> | <span class="mileage">1000 km</span> | <span class="color">White</span></p>
+                <p class="description">An sports car that merges Porsche's racing DNA with sustainability.</p>
+                <p class="price">11.000.000.000 VND</p>
+            </div>
+
+            <div class="car-card" data-brand="bentley" data-price="12000000000">
+                <img src="../car dealer/img/Bentley Continental GT.jpg" alt="Bentley Continental">
+                <h3>Bentley Continental GT</h3>
+                <p class="car-info"><span class="year">2022</span> | <span class="mileage">1500 km</span> | <span class="color">Black</span></p>
+                <p class="description">Luxury grand tourer offering opulence and comfort for high-speed journeys.</p>
+                <p class="price">12.000.000.000 VND</p>
+            </div>
+
+            <div class="car-card" data-brand="aston" data-price="11000000000">
+                <img src="../car dealer/img/aston martin db11.jpg" alt="Aston Martin DB11">
+                <h3>Aston Martin DB11</h3>
+                <p class="car-info"><span class="year">2021</span> | <span class="mileage">2200 km</span> | <span class="color">Grey</span></p>
+                <p class="description">British elegance meets V12 power in this grand touring masterpiece.</p>
+                <p class="price">11.000.000.000 VND</p>
+            </div>
+
+            <div class="car-card" data-brand="mercedes" data-price="15000000000">
+                <img src="../car dealer/img/ferrari sf90 stradale.jpg" alt="2025 Ferrari SF90 Spider">
+                <h3>2025 Ferrari SF90 Spider</h3>
+                <p class="car-info"><span class="year">2025</span> | <span class="mileage">683km</span> | <span class="color">Metallic 2 Layer Paint</span></p>
+                <p class="description">Powered by a 4.0L twin-turbo V8 paired with three electric motors, the SF90 Spider produces a staggering 986bhp,...</p>
+                <p class="price">15.000.000.000 VND</p>
+            </div>
+
+            <div class="car-card" data-brand="mercedes" data-price="15000000000">
+                <img src="../car dealer/img/Bugati Chiron.jpg" alt="Mercedes-Benz AMG GT Black Series">
+                <h3>Bugati Chiron</h3>
+                <p class="car-info"><span class="year">2020</span> | <span class="mileage">232 km</span> | <span class="color">
+                    Grigio Titanio Metallic</span></p>
+                <p class="description">Track-focused engineering from Bugati delivering elite performance and style.</p>
+                <p class="price">150.000.000.000 VND</p>
+            </div>
+            <div class="car-card" data-brand="mercedes" data-price="15000000000">
+                <img src="../car dealer/img/2025 Ferrari SF90 Spider.jpg" alt="Ferrari SF90 Spider">
+                <h3>Ferrari SF90 Spider</h3>
+                <p class="car-info"><span class="year">2022</span> | <span class="mileage">546 km</span> | <span class="color">
+                    Grigio Titanio Metallic</span></p>
+                <p class="description">Powered by a hybrid 4.0L twin-turbo V8 engine paired with electric motors, it delivers an astonishing 986 bhp, enabling a 0-62 mph </p>
+                <p class="price">35.000.000.000 VND</p>
+            </div>
+            <div class="car-card" data-brand="mercedes" data-price="15000000000">
+                <img src="../car dealer/img/AMG.jpg" alt="Mercedes-Benz AMG GT Black Series">
+                <h3>2022 Mercedes-AMG GT Black Series</h3>
+                <p class="car-info"><span class="year">2022</span> | <span class="mileage">868 km</span> | <span class="color">Magma Beam Orange</span></p>
+                <p class="description">Track-focused engineering from AMG delivering elite performance and style.</p>
+                <p class="price">15.000.000.000 VND</p>
+            </div>
+            <div class="car-card" data-brand="mercedes" data-price="15000000000">
+                <img src="../car dealer/img/AMG.jpg" alt="Mercedes-Benz AMG GT Black Series">
+                <h3>2022 Mercedes-AMG GT Black Series</h3>
+                <p class="car-info"><span class="year">2022</span> | <span class="mileage">868 km</span> | <span class="color">Magma Beam Orange</span></p>
+                <p class="description">Track-focused engineering from AMG delivering elite performance and style.</p>
+                <p class="price">15.000.000.000 VND</p>
+            </div>
+            <div class="car-card" data-brand="mercedes" data-price="15000000000">
+                <img src="../car dealer/img/AMG.jpg" alt="Mercedes-Benz AMG GT Black Series">
+                <h3>2022 Mercedes-AMG GT Black Series</h3>
+                <p class="car-info"><span class="year">2022</span> | <span class="mileage">868 km</span> | <span class="color">Magma Beam Orange</span></p>
+                <p class="description">Track-focused engineering from AMG delivering elite performance and style.</p>
+                <p class="price">15.000.000.000 VND</p>
+            </div>
+            <div class="car-card" data-brand="mercedes" data-price="15000000000">
+                <img src="../car dealer/img/AMG.jpg" alt="Mercedes-Benz AMG GT Black Series">
+                <h3>2022 Mercedes-AMG GT Black Series</h3>
+                <p class="car-info"><span class="year">2022</span> | <span class="mileage">868 km</span> | <span class="color">Magma Beam Orange</span></p>
+                <p class="description">Track-focused engineering from AMG delivering elite performance and style.</p>
+                <p class="price">15.000.000.000 VND</p>
+            </div>
+
+            <div class="car-card" data-brand="mercedes" data-price="15000000000">
+                <img src="../car dealer/img/AMG.jpg" alt="Mercedes-Benz AMG GT Black Series">
+                <h3>2022 Mercedes-AMG GT Black Series</h3>
+                <p class="car-info"><span class="year">2022</span> | <span class="mileage">868 km</span> | <span class="color">Magma Beam Orange</span></p>
+                <p class="description">Track-focused engineering from AMG delivering elite performance and style.</p>
+                <p class="price">15.000.000.000 VND</p>
+            </div>
+        </div>
+    </div>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h4>SUPPORT</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Shipping Information</a></li>
+                        <li><a href="#">Warranty Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>LEGAL</h4>
+                    <ul>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Intellectual Property</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>PARTNERS</h4>
+                    <ul>
+                        <li><a href="#">Finance with PartnerName</a></li>
+                        <li><a href="#">Insurance Services</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                        <li><a href="#">Become a Dealer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Cardealer Lifestyle Ltd. All rights reserved.</p>
+                <p>No part of this website may be reproduced without written permission.</p>
+            </div>
+        </footer>
+    
+    <script src="showroom.js"></script>
+</body>
+
+</html>

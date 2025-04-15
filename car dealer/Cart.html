@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart - Super Cars</title>
+    <link rel="shortcut icon" href="images/logo_loya.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Back to Home Button -->
+      <div class="back-to-home">
+        <a href="Showroom.html">← Back to Home</a>
+      </div>
+      <section id="new-product1">
+        <div class="new-product-heading">
+          <h2>Featured Super Cars</h2>
+          <p>Check out our selection of super cars</p>
+        </div>
+        <div class="feature-product-container">
+          <!-- Super Car Product 1 -->
+          <div class="new-product-box" data-id="1">
+            <a href="#" class="new-product-img">
+              <img src="/car dealer/img/lamborghini aventador.jpg" alt="Super Car 1" />
+              <a href="#" class="new-product-cart-btn" onclick="addToCart('Lamborghini Aventador', 500000, 'images/supercar-1.jpg')">
+                <i class="fas fa-cart-shopping"></i> Add To Cart
+              </a>
+            </a>
+            <div class="new-product-text">
+              <a href="#" class="new-product-title">Lamborghini Aventador</a>
+              <span>$500,000</span>
+            </div>
+          </div>
+
+          <!-- Super Car Product 2 -->
+          <div class="new-product-box" data-id="2">
+            <a href="#" class="new-product-img">
+              <img src="/car dealer/img/ferrari sf90 stradale.jpg" alt="Super Car 2" />
+              <a href="#" class="new-product-cart-btn" onclick="addToCart('Ferrari SF90 Stradale', 700000, 'images/supercar-2.jpg')">
+                <i class="fas fa-cart-shopping"></i> Add To Cart
+              </a>
+            </a>
+            <div class="new-product-text">
+              <a href="#" class="new-product-title">Ferrari SF90 Stradale</a>
+              <span>$700,000</span>
+            </div>
+          </div>
+
+          <!-- Super Car Product 3 -->
+          <div class="new-product-box" data-id="3">
+            <a href="#" class="new-product-img">
+              <img src="/car dealer/img/Mclaren P1.jpg" alt="Super Car 3" />
+              <a href="#" class="new-product-cart-btn" onclick="addToCart('McLaren P1', 1200000, 'images/supercar-3.jpg')">
+                <i class="fas fa-cart-shopping"></i> Add To Cart
+              </a>
+            </a>
+            <div class="new-product-text">
+              <a href="#" class="new-product-title">McLaren P1</a>
+              <span>$1,200,000</span>
+            </div>
+          </div>
+
+          <!-- Super Car Product 4 -->
+          <div class="new-product-box" data-id="4">
+            <a href="#" class="new-product-img">
+              <img src="/car dealer/img/revuelto.jpg" alt="Super Car 4" />
+              <a href="#" class="new-product-cart-btn" onclick="addToCart('Lamborghini Revuelto', 1200000, 'images/supercar-4.jpg')">
+                <i class="fas fa-cart-shopping"></i> Add To Cart
+              </a>
+            </a>
+            <div class="new-product-text">
+              <a href="#" class="new-product-title">Lamborghini Revuelto</a>
+              <span>$1,200,000</span>
+            </div>
+          </div>
+
+          <!-- Super Car Product 5 -->
+          <div class="new-product-box" data-id="5">
+            <a href="#" class="new-product-img">
+              <img src="/car dealer/img/Bugati Chiron.jpg" alt="Super Car 5" />
+              <a href="#" class="new-product-cart-btn" onclick="addToCart('Bugatti Chiron', 3000000, 'images/supercar-5.jpg')">
+                <i class="fas fa-cart-shopping"></i> Add To Cart
+              </a>
+            </a>
+            <div class="new-product-text">
+              <a href="#" class="new-product-title">Bugatti Chiron</a>
+              <span>$3,000,000</span>
+            </div>
+          </div>
+
+          <!-- Super Car Product 6 -->
+          <div class="new-product-box" data-id="6">
+            <a href="#" class="new-product-img">
+              <img src="/car dealer/img/lamborghini.jpg" alt="Super Car 6" />
+              <a href="#" class="new-product-cart-btn" onclick="addToCart('Lamborghini Aventador LP780-4 Ultimae Roadster', 300000, 'images/supercar-6.jpg')">
+                <i class="fas fa-cart-shopping"></i> Add To Cart
+              </a>
+            </a>
+            <div class="new-product-text">
+              <a href="#" class="new-product-title">Lamborghini Aventador LP780-4 Ultimae Roadster</a>
+              <span>$300,000</span>
+            </div>
+          </div>
+
+          <!-- Super Car Product 7 -->
+          <div class="new-product-box" data-id="7">
+            <a href="#" class="new-product-img">
+              <img src="/car dealer/img/AMG.jpg" alt="Super Car 7" />
+              <a href="#" class="new-product-cart-btn" onclick="addToCart('2022 Mercedes-AMG GT Black Series', 500000, 'images/supercar-7.jpg')">
+                <i class="fas fa-cart-shopping"></i> Add To Cart
+              </a>
+            </a>
+            <div class="new-product-text">
+              <a href="#" class="new-product-title">2022 Mercedes-AMG GT Black Series</a>
+              <span>$500,000</span>
+            </div>
+          </div>
+
+          <!-- Super Car Product 8 -->
+          <div class="new-product-box" data-id="8">
+            <a href="#" class="new-product-img">
+              <img src="/car dealer/img/aston martin db11.jpg" alt="Super Car 8" />
+              <a href="#" class="new-product-cart-btn" onclick="addToCart('Aston Martin DB11', 205000, 'images/supercar-8.jpg')">
+                <i class="fas fa-cart-shopping"></i> Add To Cart
+              </a>
+            </a>
+            <div class="new-product-text">
+              <a href="#" class="new-product-title">Aston Martin DB11</a>
+              <span>$205,000</span>
+            </div>
+          </div>
+
+          <!-- Thêm các sản phẩm siêu xe khác tương tự như trên -->
+          <div class="new-product-box" data-id="9">
+            <a href="#" class="new-product-img">
+              <img src="/car dealer/img/porsche 911 turbo s.jpg" alt="Super Car 9" />
+              <a href="#" class="new-product-cart-btn" onclick="addToCart('Porsche 911 Turbo S', 180000, 'images/supercar-9.jpg')">
+                <i class="fas fa-cart-shopping"></i> Add To Cart
+              </a>
+            </a>
+            <div class="new-product-text">
+              <a href="#" class="new-product-title">Porsche 911 Turbo S</a>
+              <span>$180,000</span>
+            </div>
+          </div>
+
+          <div class="new-product-box" data-id="10">
+            <a href="#" class="new-product-img">
+              <img src="/car dealer/img/Audi r8.jpg" alt="Super Car 10" />
+              <a href="#" class="new-product-cart-btn" onclick="addToCart('Audi R8 V10', 150000, 'images/supercar-10.jpg')">
+                <i class="fas fa-cart-shopping"></i> Add To Cart
+              </a>
+            </a>
+            <div class="new-product-text">
+              <a href="#" class="new-product-title">Audi R8 V10</a>
+              <span>$150,000</span>
+            </div>
+          </div>
+
+          <!-- Tiếp tục thêm các sản phẩm khác cho đến sản phẩm 20 -->
+        </div>
+      </section>
+    </div>
+
+    <a href="Cart2.html" class="cart-link">Go to Cart</a>
+
+    <script>
+      // Hàm thêm sản phẩm vào giỏ hàng
+      function addToCart(name, price, image) {
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        // Kiểm tra nếu sản phẩm đã có trong giỏ hàng
+        let existingProduct = cart.find(item => item.name === name);
+
+        if (existingProduct) {
+          existingProduct.quantity += 1;
+        } else {
+          cart.push({
+            name: name,
+            price: price,
+            image: image,
+            quantity: 1
+          });
+        }
+
+        // Lưu lại giỏ hàng vào localStorage
+        localStorage.setItem('cart', JSON.stringify(cart));
+
+        alert(`${name} has been added to your cart.`);
+      }
+    </script>
+  </body>
+</html>
